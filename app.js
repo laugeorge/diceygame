@@ -16,12 +16,23 @@ scores = [0,0];
 roundScore = 0;
 activePlayer = 0;
 
-dice = Math.round(Math.random() * 6) + 1;
-console.log(dice);
-
-document.querySelector('#current-' + activePlayer).textContent = dice
-
-var x = document.querySelector('#score-0').textContent;
-console.log(x);
-
 document.querySelector('.dice').style.display = 'none';
+
+document.getElementByID('score-0').textContent = '0';
+document.getElementByID('score-1').textContent = '0';
+document.getElementByID('current-0').textContent = '0';
+document.getElementByID('current-1').textContent = '0';
+
+document.querySelector('.btn-roll').addEventListener('click', function() {
+
+    // Random number generator
+    dice = Math.floor(Math.random() * 6) + 1;
+
+    // Dispaly the result
+    var diceDOM = document.querySelector('.dice');
+    diceDOM.style.display = 'block';
+    diceDOM.src = 'dice-' + dice + '.png';
+
+    // Update the round score if the rolled number was NOT 1
+
+});
