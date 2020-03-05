@@ -2,4 +2,4 @@
 
 ## Preview
 
-[![App Preview](https://github.com/laugeorge/laugeorge.github.io/blob/master/profile%20snap.JPG)](https://laugeorge.github.io/)
+[![App Preview](https://github.com/laugeorge/diceygame/blob/master/README/snapshot.JPG)]
